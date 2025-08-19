@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolekcija knjiga</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+  <header class="bg-blue-700 text-white p-6 text-center shadow-md">
+    <h1 class="text-3xl font-bold">Moja kolekcija knjiga</h1>
+    <p class="mt-2 text-blue-200">Projekat iz funkcionalnog programiranja</p>
+  </header>
+
+  <main class="flex-1 p-6 max-w-3xl mx-auto w-full">
+    <section class="mb-8 bg-white p-6 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-4">Dodaj knjigu</h2>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <input id="bookInput" type="text" placeholder="Unesi naziv knjige..."
+               class="border p-2 rounded flex-1 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        <button id="addBook" 
+                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          Dodaj
+        </button>
+      </div>
+    </section>
+
+    <section class="mb-8 bg-white p-6 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-4">Lista knjiga</h2>
+      <ul id="bookList" class="space-y-2"></ul>
+    </section>
+
+    <section class="mb-8 bg-white p-6 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-4">Analiza kolekcije</h2>
+      <p id="analysis" class="bg-gray-100 p-4 rounded-lg shadow-inner text-gray-700"></p>
+    </section>
+  </main>
+
+  <footer class="bg-blue-700 text-white p-4 text-center mt-auto">
+    © 2025 Moj sajt – Funkcionalno programiranje
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
